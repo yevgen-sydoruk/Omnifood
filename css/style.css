@@ -14,55 +14,7 @@ body {
   font-weight: 400;
   color: #555;
 }
-/* ##### REUSABLE Components ##### */
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
 
-.btn:link,
-.btn:visited {
-  padding: 1.6rem 3.2rem;
-  display: inline-block;
-
-  font-size: 2rem;
-  text-decoration: none;
-  border-radius: 10px;
-
-  transition: all 300ms;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-  color: #fff;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-
-  box-shadow: inset 0 0 0 3px #cf711f;
-}
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
 /* ##### HEADER Section ##### */
 
 .header {
@@ -178,4 +130,65 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+/* ##### HOW IT WORKS Components ##### */
+
+.section-how {
+  padding: 9.6rem 0;
+  /* background-color: orangered; */
+}
+
+.grid {
+}
+.grid--2--cols {
+}
+.step-text-box {
+}
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img-box::before,
+.step-img-box::after {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -1;
+}
+
+.step-img-box::after {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+}
+
+.step-img {
+  width: 40%;
+  z-index: 100;
 }
