@@ -13,20 +13,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
+
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header-logo">
       <a href="#">
         <img src="img/omnifood-logo.png" alt="Omnifood Logo" class="logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Meals</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a class="nav-cta" href="#">Try for Free</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a class="nav-cta" href="#cta">Try for Free</a></li>
         </ul>
       </nav>
 
@@ -47,8 +49,8 @@
               The smart 365-days-per-year food subscription that will make you eat healthy again.
               Tailored to your personal tastes and nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="./img/customers/customer-1.jpg" alt="Customer photo" />
@@ -86,7 +88,7 @@
       </section>
 
       <!-- SECTION HOW -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="header-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -142,7 +144,7 @@
       </section>
 
       <!-- SECTION MEALS -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="subheading center">Meals</span>
           <h2 class="header-secondary center">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -239,11 +241,11 @@
           </div>
         </div>
         <div class="container all-recepies">
-          <a href="#" class="link">See all recepies &rarr;</a>
+          <a href="#meals" class="link">See all recepies &rarr;</a>
         </div>
       </section>
       <!-- SECTION TESTIMONIALS -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Customer testimonials</span>
           <h2 class="header-secondary">Once you try it, you can`t go back</h2>
@@ -375,7 +377,7 @@
         </div>
       </section>
       <!-- SECTION PRICING -->
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Customer testimonials</span>
           <h2 class="header-secondary">Eating well without breaking the bank</h2>
@@ -402,7 +404,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
             </div>
           </div>
           <div class="pricing-plan pricing-plan--comlete">
@@ -430,7 +432,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
             </div>
           </div>
         </div>
@@ -475,7 +477,7 @@
       </section>
 
       <!-- SECTION CALL TO ACTION -->
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -519,7 +521,7 @@
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
-          <a href="#" class="footer-logo">
+          <a href="#header-logo" class="footer-logo">
             <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
           </a>
 
