@@ -23,3 +23,24 @@ btnNavEl.addEventListener("click", function () {
 });
 
 checkFlexGap();
+
+////////////////////
+//Sticky Navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    ent.isIntersecting
+      ? document.body.classList.remove("sticky")
+      : document.body.classList.add("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroEl);
