@@ -1,4 +1,4 @@
-console.log("js connected");
+// console.log("js connected");
 function checkFlexGap() {
   let flex = document.createElement("div");
   flex.style.display = "flex";
